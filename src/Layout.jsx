@@ -1,9 +1,11 @@
-import { QRCodeGen } from "./QRCodeGen.jsx";
+import { QRCodeGen } from "./components/QRCodeGen.jsx";
+import { QRCodeScan } from "./components/QRCodeScan.jsx";
 
 export const Layout = () => {
   return (
     <div>
-      <QRCodeGen />
+      <QRCodeScan />
+      {/* <QRCodeGen /> */}
     </div>
   );
 };

@@ -8,7 +8,7 @@ body {
   background: linear-gradient(160deg, #eaf4ff 0%, #f9fbff 45%, #ffffff 100%);
 }
 
-.qr-page {
+.qrPage {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@ body {
   padding: 24px;
 }
 
-.qr-card {
+.qrCard {
   width: 100%;
   max-width: 420px;
   display: flex;
@@ -29,7 +29,7 @@ body {
   box-shadow: 0 16px 45px rgba(17, 24, 39, 0.12);
 }
 
-.qr-title {
+.qrTitle {
   margin: 0;
   font-size: 28px;
   line-height: 1.15;
@@ -37,58 +37,32 @@ body {
   text-align: center;
 }
 
-.qr-preview {
-  width: 240px;
-  height: 240px;
+.qrScannerWrap {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
   background: #f6f9ff;
   border: 1px solid #d9e4ff;
   border-radius: 16px;
-  padding: 10px;
 }
 
-.qr-input {
+.qrScannerWrap video,
+.qrScannerWrap canvas {
+  border-radius: 12px;
+}
+
+.qrResult {
   width: 100%;
-  height: 48px;
+  min-height: 48px;
+  margin: 0;
+  padding: 12px 14px;
   border: 1px solid #c6d6f8;
   border-radius: 12px;
-  padding: 0 14px;
-  font-size: 16px;
+  background: #f8fbff;
   color: #10203a;
-  outline: none;
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.qr-input:focus {
-  border-color: #3c6df0;
-  box-shadow: 0 0 0 3px rgba(60, 109, 240, 0.18);
-}
-
-.qr-button {
-  width: 100%;
-  height: 48px;
-  border: none;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #0a173a 0%, #4b7bf5 100%);
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.2s ease,
-    filter 0.2s ease;
-}
-
-.qr-button:hover {
-  box-shadow: 0 10px 20px rgba(47, 97, 232, 0.3);
-  filter: brightness(1.03);
-}
-
-.qr-button:active {
-  transform: translateY(1px);
+  font-size: 15px;
+  line-height: 1.35;
+  word-break: break-word;
 }
