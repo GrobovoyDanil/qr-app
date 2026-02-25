@@ -1,6 +1,6 @@
 import { QRCodeSVG } from "qrcode.react";
 import { useState } from "react";
-import s from "../css/QRCodeGen.module.css";
+import s from "./QRCodeGen.module.css";
 
 export const QRCodeGen = () => {
   const [value, setValue] = useState("");
