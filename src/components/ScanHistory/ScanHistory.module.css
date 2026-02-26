@@ -1,0 +1,46 @@
+.qrPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 40px 24px;
+  background: linear-gradient(160deg, #eaf4ff 0%, #f9fbff 45%, #ffffff 100%);
+}
+
+.qrTitle {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #14223b;
+  text-align: center;
+}
+
+.qrList {
+  width: 100%;
+  max-width: 760px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.qrItem {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(17, 24, 39, 0.12);
+  color: #10203a;
+  word-break: break-word;
+}
+
+.qrCode {
+  justify-self: center;
+  background: #f6f9ff;
+  border: 1px solid #d9e4ff;
+  border-radius: 14px;
+  padding: 10px;
+}

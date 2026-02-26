@@ -4,13 +4,14 @@ import { Navigation } from "./components/Navigation/Navigation.jsx";
 import { Routes, Route } from "react-router-dom";
 import { GenHistory } from "./components/GenHistory/GenHistory.jsx";
 import { ScanHistory } from "./components/ScanHistory/ScanHistory.jsx";
+import { Home } from "./components/Home/Home.jsx";
 
 export const Layout = () => {
   return (
     <div>
       <Navigation />
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/" element={<Home />} />
         <Route path="/generate" element={<QRCodeGen />} />
         <Route path="/scan" element={<QRCodeScan />} />
         <Route path="/generateHistory" element={<GenHistory />} />
