@@ -8,7 +8,7 @@ export const QRCodeGen = () => {
   const [result, setResult] = useState("");
 
   const onClickHandler = () => {
-    const prevData = JSON.parse(localStorage.getItem(GENERATE_DATA)) || "[]";
+    const prevData = JSON.parse(localStorage.getItem(GENERATE_DATA)) || [];
 
     localStorage.setItem(GENERATE_DATA, JSON.stringify([...prevData, value]));
     setResult(value);
