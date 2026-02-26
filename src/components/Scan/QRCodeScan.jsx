@@ -1,12 +1,20 @@
 import { Scanner } from "@yudiel/react-qr-scanner";
 import { useState } from "react";
 import s from "./QRCodeScan.module.css";
+import { SCAN_DATA } from "../../data";
 
 export const QRCodeScan = () => {
   const [scanned, setResult] = useState(null);
 
   const onScanHandler = (result) => {
     setResult(result[0].rawValue);
+
+    const prevData = JSON.parse(localStorage.getItem(SCAN_DATA)) || "[]";
+
+    localStorage.setItem(
+      SCAN_DATA,
+      JSON.stringify([...prevData, result[0].rawValue]),
+    );
   };
 
   const settings = {
@@ -21,7 +29,6 @@ export const QRCodeScan = () => {
 
         <div className={s.qrScannerWrap}>
           <Scanner
-            allowMultiple
             onScan={onScanHandler}
             settings={settings}
             styles={{

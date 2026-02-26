@@ -17,6 +17,12 @@ export const Navigation = () => {
         <NavLink to="/scan" className={getLinkClassName}>
           Scan QR Code
         </NavLink>
+        <NavLink to="/generateHistory" className={getLinkClassName}>
+          Generate History
+        </NavLink>
+        <NavLink to="/scanHistory" className={getLinkClassName}>
+          Scan History
+        </NavLink>
       </nav>
     </header>
   );
