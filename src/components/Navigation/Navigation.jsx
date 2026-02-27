@@ -8,19 +8,19 @@ export const Navigation = () => {
   return (
     <header className={s.navWrap}>
       <nav className={s.navBar}>
-        <NavLink to="/" className={getLinkClassName} end>
+        <NavLink to="/qr-app/" className={getLinkClassName} end>
           Home
         </NavLink>
-        <NavLink to="/generate" className={getLinkClassName}>
+        <NavLink to="/qr-app/generate" className={getLinkClassName}>
           Generate QR Code
         </NavLink>
-        <NavLink to="/scan" className={getLinkClassName}>
+        <NavLink to="/qr-app/scan" className={getLinkClassName}>
           Scan QR Code
         </NavLink>
-        <NavLink to="/generateHistory" className={getLinkClassName}>
+        <NavLink to="/qr-app/generateHistory" className={getLinkClassName}>
           Generate History
         </NavLink>
-        <NavLink to="/scanHistory" className={getLinkClassName}>
+        <NavLink to="/qr-app/scanHistory" className={getLinkClassName}>
           Scan History
         </NavLink>
       </nav>
